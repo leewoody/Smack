@@ -149,7 +149,7 @@ allprojects {
 			// fallback to using a environment variable,
 			// e.g. JAVA7_HOME. See SMACK-651.
 			'-Xlint:-options',
-			'-Werror',
+			//'-Werror',
 			// Needed because since adding gradle-errorprone-plugin
 			// See https://github.com/tbroyer/gradle-errorprone-plugin/issues/15
 			'-Xlint:-path',
