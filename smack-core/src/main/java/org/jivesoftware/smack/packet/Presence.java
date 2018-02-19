@@ -365,7 +365,17 @@ public final class Presence extends Stanza implements TypedCloneable<Presence> {
         /**
          * Do not disturb.
          */
-        dnd;
+        dnd,
+
+        /**
+         * Do not disturb.
+         */
+        inactive,
+
+        /**
+         * Do not disturb.
+         */
+        active;
 
         /**
          * Converts a String into the corresponding types. Valid String values that can be converted

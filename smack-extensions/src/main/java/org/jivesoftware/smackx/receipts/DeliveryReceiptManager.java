@@ -169,6 +169,7 @@ public class DeliveryReceiptManager extends Manager {
                                     + "' without a stanza ID set. Message: " + messageWithReceiptRequest);
                     return;
                 }
+                ack.setTo(from.replaceAll("/.*", ""));
                 connection.sendStanza(ack);
             }
         }, MESSAGES_WITH_DEVLIERY_RECEIPT_REQUEST);
